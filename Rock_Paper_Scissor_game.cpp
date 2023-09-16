@@ -38,10 +38,10 @@ int main()
 {
     int random_no;
     char user;
-    srand(time(0));
-    random_no = rand() % 3 + 1; //  random number generate here between 1 to 3
     while (user != 'E' && user != 'e')
     {
+        srand(time(0));
+        random_no = rand() % 3 + 1; //  random number generate here between 1 to 3
         cout << "Enter 'r' or 'R' for Rock, 'p' or 'P' for Paper & 's' or 'S' for Scissor : " << endl;
         cout << "To exit the game enter: 'e' or 'E' " << endl;
         cin >> user; //  taking user input
